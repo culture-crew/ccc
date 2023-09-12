@@ -1,9 +1,24 @@
 @import "/assets/css/reset.css";
 
+/* HEADER */
+header {width: 100%; height: auto;}
+header .gnb {display: flex; flex-direction: row; max-width: 1440px; margin: 0 auto; padding: 17px 20px;}
+header .gnb .logo a {font-size: 24px;}
+header .gnb .logo a > img {width: 120px; height: 26px; object-fit: contain;}
+header .gnb .nav {display: flex; flex-direction: row; justify-content: center; width: 100%;}
+header .gnb .nav .tab-container {display: flex; flex-direction: row; align-items: center; gap: 70px;}
+header .gnb .alert-container {width: 200px;}
 
-.container {
-    width: 100%;
-    max-width: 2048px;
-    margin: 0 auto;
-    min-height: 100%;
-}
+
+
+/* MAIN */
+.container {width: 100%; max-width: 1320px; min-height: 100%; margin: 0 auto; padding: 0 60px;}
+.container .banner-container {display: flex; justify-content: center; padding: 60px 0; border-bottom: 2px solid #000;}
+.container .banner-container .banner-swiper {position: relative;}
+.container .banner-container .banner-swiper .swiper-wrapper {position: relative;}
+.container .banner-container .banner-swiper .swiper-wrapper .swiper-slide {width: 100%; max-height: 480px; height: auto;}
+.container .banner-container .banner-swiper .swiper-wrapper .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
+.container .content-container .content-box {padding-top: 30px;}
+.container .content-container .content-box .content-list {display: flex; flex-direction: row; flex-wrap: wrap; gap: 30px 0;}
+.container .content-container .content-box .content-list .content-item {display: flex; justify-content: center; width: calc(100% / 3); height: auto;}
+/* .container .content-container .content-box .content-list .content-item:nth-child(2n + 1) {border-left: 1px solid #000;} */
